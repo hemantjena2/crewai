@@ -69,7 +69,7 @@ class LearningTasks:
     
     def learning_tracking_task(self, agent, profile_summary):
         return Task(
-            description=f"Create 5 MCQ questions based on this profile summary: {profile_summary}. "
+            description=f"Create 5 MCQ questions based on the profile summary but specifically focus on the topics that the student is interested in: {profile_summary}. "
                         "Analyze the answers and generate a percentage score and learning summary.",
             expected_output="5 MCQ questions without answers.",
             agent=agent
